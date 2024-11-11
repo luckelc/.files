@@ -1,19 +1,28 @@
 # Ignore all files by default
 *
 
+# Allow the AUR helper: paru 
 !.config/
 !.config/paru/
 !.config/paru/*
 
+# Allow tmux
+!.config/tmux/
+!.config/tmux/*
+
+
+# Allow zsh-shell, plugins, themes etc.
 !.zshrc
 !.zsh/
 !.zsh/**
 
-!.config/tmux/
-!.config/tmux/*
+!.config/starship.toml
 
+
+# Allow git-related files
 !.gitignore
 
 !.gitconfig
+
 !.gitmodules
 
