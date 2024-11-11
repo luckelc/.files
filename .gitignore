@@ -1,12 +1,16 @@
 # Ignore all files by default
 *
 
+!.config/
+!.config/paru/
+!.config/paru/*
+
 !.zshrc
 !.zsh/
 !.zsh/**
 
 !.config/tmux/
-!.config/tmux/**
+!.config/tmux/*
 
 !.gitignore
 
