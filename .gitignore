@@ -2,11 +2,11 @@
 *
 
 !.zshrc
-!.zsh
-!.zsh/*
+!.zsh/
+!.zsh/**
 
 !.config/tmux/
-!.config/tmux/*
+!.config/tmux/**
 
 !.gitignore
 
