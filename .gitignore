@@ -1,0 +1,14 @@
+# Ignore all files by default
+*
+
+!.zshrc
+!.zsh
+!.zsh/*
+
+!.config/tmux/
+!.config/tmux/*
+
+!.gitignore
+
+!.gitconfig
+
