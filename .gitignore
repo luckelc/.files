@@ -7,9 +7,7 @@
 !.config/paru/*
 
 # Allow tmux
-!.config/tmux/
-!.config/tmux/*
-
+!.tmux.conf
 
 # Allow zsh-shell, plugins, themes etc.
 !.zshrc
