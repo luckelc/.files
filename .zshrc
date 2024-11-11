@@ -24,6 +24,12 @@ precmd() {
   fi
 }
 
+# Automatically start tmux if not already inside a tmux session
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux
+fi
+
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
@@ -33,11 +39,9 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Add zsh-syntax-highlighting plugin
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Add git aliases
+source ~/.zsh/git/git-plugin.zsh
+
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
-
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /home/lucas/.dart-cli-completion/zsh-config.zsh ]] && . /home/lucas/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
 
