@@ -7,6 +7,9 @@ alias kys='shutdown now'
 
 alias cf='file="$(fzf)"; [ -n "$file" ] && nvim "$file" +":cd %:p:h"'
 
+alias v='nvim +Startup'
+
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
